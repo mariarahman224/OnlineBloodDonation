@@ -1,0 +1,1298 @@
+
+/* =====================index all css end ======================== */
+
+
+/*-------====== common css start ======------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Share+Tech&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Share Tech', sans-serif; */
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    transition: all linear .3s;
+}
+
+ :root {
+    --white: #fff;
+    --cyan: #0bc1e9;
+    --cyan-light: #0bc0e99f;
+    --checkout: #0bc0e93a;
+    --blue: #3749bb;
+    --purple: #6e2594;
+    --bg-color: #f1f3f3;
+    --bg-color-2: #001736;
+    --banner-bg: #e9e0bebe;
+    --black: #000;
+    --black-1: #111;
+    --black-2: #222;
+    --black-3: #333;
+    --black-6: #666;
+    --shadow: #0000001a;
+    --border: #9695955e;
+    --eee-color: #eee;
+    --p-color: #01132d;
+    --ddd-color: #ddd;
+    --header-top-p: #ffffff80;
+    --main-color2: #f44336;
+    --main-color: #ff0000e8;
+    --header-color: #b99191;
+    --overlay: #00000080;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+.row .col {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+.common-btn a  {
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 55px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    transition: all linear .3s;
+}
+
+.common-btn a:hover {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
+
+/* header  */
+
+.header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header h1 {
+    color: var(--main-color);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.header h1:hover {
+    color: var(--main-color);
+}
+
+.header p {
+    font-size: 15px;
+    color: var(--p-color);
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.social-icon i {
+    height: 40px;
+    width: 40px;
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px 4px;
+}
+
+.social-icon i:hover {
+    color: var(--main-color);
+    background-color: var(--white);
+}
+.active {
+    color: var(--main-color);
+}
+/*-------====== common css end ======------- */
+
+
+/*-------====== home page ======------- */
+
+
+/*------- header section start ------- */
+
+/* header-area start */
+
+.header-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--header-color);
+    z-index: 10000;
+    box-shadow: 0 0 4px var(--black-6);
+}
+.header-area .main-header {
+    display: flex;
+    justify-content: space-between;
+ }
+.header-area .logo {
+    width: 200px;
+    height: 70px;
+}
+
+.header-area .logo{
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+}
+.header-area .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: sub;
+}
+
+.header-area .navber ul {
+    display: flex;
+    justify-content: end;
+}
+
+.header-area .navber ul li a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 70px;
+    margin: 0 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.header-area .navber ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--white);
+}
+
+
+/* ===================================== */
+.header-area .header-search {
+    flex-basis: 34%;
+    height: 50px;
+    margin: 0 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.search-adderss {
+    /* background-color: red; */
+}
+.header-area .header-search input {
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid transparent;
+    outline: none;
+    padding: 0 35px 0 10px;
+}
+
+.header-area .search-icon i {
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    color: var(--black-3);
+    padding: 0 15px;
+}
+
+.header-area .header-search input:focus {
+    border-color: var(--main-color);
+    border-radius: 4px;
+
+}
+
+/* ===================================== */
+
+/*------- header section end ------- */
+
+
+/*------- banner section start ------- */
+
+.banner-area {
+    margin-top: 150px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+    background: no-repeat scroll center;
+    background-size: cover;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    list-style: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 8px;
+    box-sizing: content-box;
+    margin: 5px 5px;
+    background-color: var(--white);
+    flex: 0 1 auto;
+    cursor: pointer;
+    opacity: .6;
+    transition: opacity 4s ease;
+}
+
+
+/* right  */
+
+.banner-right-form {
+    width: 100%;
+    height: auto;
+    background-color: var(--banner-bg);
+    box-shadow: 5px 5px 0 var(--shadow);
+    margin-bottom: 30px;
+    padding: 25px 10px;
+}
+
+.banner-right-form .banner-right-content h2 {
+    color: var(--black);
+    font-size: 16px;
+    text-align: center;
+}
+
+.banner-right-form .banner-right-content p {
+    color: var(--p-color);
+    font-size: 14px;
+    text-align: center;
+}
+
+.banner-right-search {
+    position: relative;
+    overflow: hidden;
+    border: 10px;
+}
+
+.banner-right-search input {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border: 1.5px solid transparent;
+    box-shadow: 2px 2px 0 var(--shadow);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+}
+
+.banner-right-search input:focus {
+    border-color: var(--cyan);
+}
+
+.banner-right-search input::placeholder {
+    font-size: 14px;
+}
+
+.banner-right-search .search-icon i {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 14px;
+    color: var(--black-6);
+}
+
+.banner-right-search .banner-btn {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--blue);
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    outline: none;
+    margin: 0;
+    padding: 8px 0;
+    transition: all linear .3s
+}
+
+.banner-right-search .banner-btn:hover {
+    background-color: var(--cyan);
+}
+
+.banner-right-img {
+    box-shadow: 5px 5px 0 var(--shadow);
+}
+
+.banner-right-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*------- banner section  end ------- */
+
+
+/*------- marquee section start ------- */
+
+.marquee {
+    color: var(--black-2);
+    background-color: var(--white);
+    box-shadow: 0 0 6px 3px var(--shadow);
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+
+marquee {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-top: 5px;
+}
+
+
+/*------- marquee section end ------- */
+
+
+
+/*-------======= scroll button start ======= ------- */
+
+.scroll-button-area .scroll-btn {
+    position: fixed;
+    bottom: 160px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: none;
+    padding: 0;
+}
+
+.scroll-button-area .scroll-btn i {
+    color: var(--white);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+/*-------======= scroll button end =======------ */
+
+
+/*-------footer section start------- */
+
+.footer-area {
+    margin-top: 50px;
+    width: 100%;
+    background-color: var(--header-color);
+ 
+}
+
+
+.footer-area .footer-top {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.footer-area .footer-top h1 {
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.footer-area .footer-top .footer-icons {
+    text-align: end;
+}
+
+.footer-area .footer-upper {
+    width: 100%;
+    border-bottom: 2px solid #ffffff1a;
+    /* z-index: 1000; */
+    padding: 40px 0;
+}
+
+.footer-area .footer-upper h3 {
+    color: var(--main-color);
+    font-size: 26px;
+    font-weight: 700;
+}
+.footer-area .footer-upper .footer-wdget {
+    margin: 30px 0;
+}
+
+.footer-area .footer-upper .footer-wdget p {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-area .footer-upper .subscribe-form {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.footer-area .footer-upper .subscribe-form input {
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    height: 55px;
+    color: var(--white);
+    padding: 10px 65px 10px 15px;
+    background: var(--main-color);
+    outline: none;
+    border: 1px solid var(--main-color);
+}
+
+.footer-area .footer-upper .subscribe-form input:focus {
+    border-color: var(--main-color);
+}
+
+.footer-area .footer-upper .subscribe-form input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-area .footer-upper .subscribe-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    padding: 13px 20px;
+    border: none;
+}
+
+.footer-area .footer-upper .subscribe-form button i {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.footer-area .footer-upper .footer-wdget ul {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.footer-area .footer-upper .footer-wdget ul li a {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer-area .footer-upper .footer-wdget ul li a:hover {
+    color: var(--main-color);
+    /* text-decoration: underline; */
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta i {
+    color: var(--main-color);
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta i:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+    color: #b6bbcd;
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta .cta-text span:hover {
+    color: var(--main-color);
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta .cta-text h4 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 0;
+}
+
+.footer-area .footer-upper .footer-wdget .single-cta .cta-text span {
+    color: var(--black-3);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-area .copyright {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-area .copyright p,
+a {
+    color: var(--black);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.footer-area .copyright a:hover {
+    color: var(--main-color);
+}
+
+
+/*------- footer section end ------- */
+
+
+/* -------====== account page start ======------- */
+
+.form-area {
+    margin-top: 100px;
+    background-color: var(--white);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form .form-content {
+    width: 400px;
+    padding: 30px 10px;
+}
+
+.form .form-content h1 {
+    color: var(--black-1);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form .form-content label {
+    color: var(--black-3);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.form .form-content input {
+    width: 100%;
+    border: 1px solid var(--border);
+    outline: none;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+
+.form .form-content input::placeholder {
+    color: var(--black-6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form .form-content .forgot {
+    position: relative;
+}
+
+.form .form-content .forgot .forgot-password {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--black-3);
+}
+
+.form .form-content .btn {
+    width: 100%;
+    height: 42px;
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form .form-content .create-btn {
+    color: var(--blue);
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+}
+
+.form .form-content .create-btn a {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form .form-content .create-btn a:hover {
+    color: var(--white);
+}
+
+.form .form-content .create-btn:hover a {
+    color: var(--white);
+}
+
+.form .form-content .form-btn {
+    color: var(--white);
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.form .form-content .btn:hover {
+    color: var(--white);
+    background-color: var(--cyan);
+    border: 2px solid var(--cyan);
+}
+
+.form p.donot-text {
+    text-align: center;
+    margin: 25px 0 35px;
+    border-bottom: 1px solid var(--eee-color);
+    height: 11px;
+}
+
+
+/* form css end*/
+
+
+
+
+/* form css start*/
+
+.contact-area {
+    margin-top: 120px;
+    background-color: var(--white);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form .form-content {
+    width: 400px;
+    padding: 30px 10px;
+}
+
+.form .form-content h1 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form .form-content label {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.form .form-content input {
+    width: 100%;
+    border: 1px solid var(--border);
+    outline: none;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+
+.form .form-content input::placeholder {
+    color: var(--black-6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form .form-content .forgot {
+    position: relative;
+}
+
+.form .form-content .forgot .forgot-password {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--black-3);
+}
+
+.form .form-content .btn {
+    width: 100%;
+    height: 42px;
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form .form-content .create-btn {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.form .form-content .create-btn a {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form .form-content .create-btn a:hover {
+    color: var(--white);
+}
+
+.form .form-content .create-btn:hover a {
+    color: var(--white);
+}
+
+.form .form-content .form-btn {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.form .form-content .btn:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.form p.donot-text {
+    text-align: center;
+    margin: 25px 0 35px;
+    border-bottom: 1px solid var(--eee-color);
+    height: 11px;
+}
+
+
+/* form css end*/
+
+
+/* -------============= account page end =============------- */
+
+
+/* -------============= register page start =============------- */
+
+.register-area {
+    margin-top: 70px;
+    background-color: var(--white);
+}
+
+.register-area .form {
+    display: flex;
+    justify-content: center;
+}
+
+.register-area .form .register-content {
+    width: 400px;
+    padding: 30px 10px;
+}
+
+.register-area .multiple-form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-area .multiple-form-group .form-group {
+    margin-right: 5px;
+}
+
+.register-area .multiple-form-group .form-group input {
+    width: 100%;
+}
+
+.register-area .required label:after {
+    content: " *";
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.register-area .form .register-content h1 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.register-area .form .register-content label {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.register-area .form .register-content input {
+    width: 100%;
+    border: 1px solid var(--border);
+    outline: none;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+
+.register-area .form .register-content input::placeholder {
+    color: var(--black-6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.register-area .form .register-content a {
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.register-area .form .register-content a:hover {
+    color: var(--cyan);
+}
+/* 
+.register-area .form .register-content .btn {
+    width: 100%;
+    height: 42px;
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-area .form .register-content .create-btn {
+    color: var(--blue);
+    background-color: var(--white);
+    border: 2px solid var(--main-color);
+}
+
+.register-area .form .register-content .form-btn {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 0 10px;
+}
+
+.register-area .form .register-content .btn:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+} */
+
+.register-area .form p.donot-text {
+    text-align: center;
+    margin: 25px 0 35px;
+    border-bottom: 1px solid var(--border);
+    height: 11px;
+}
+
+.register-area .form .register-content .create-account p {
+    color: var(--black-3);
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.register-area .form .register-content .create-account a {
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 30px;
+    font-weight: 500;
+    transition: all linear .3s;
+}
+
+.register-area .form .register-content .create-account a:hover {
+    text-decoration: underline;
+}
+.register-area select {
+   background-color: var(--main-color);
+}
+.register-area select option {
+   width: 500px;
+}
+/* ======================================= */
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+   margin-bottom: 20px;
+  }
+  
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color:var(--main-color);
+    /* width: 380px; */
+
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: var(--main-color);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+/* -------============= register page end =============------- */
+
+ /* ======================== about css section start===================== */
+    /* aurhtentic-it section start  */
+    
+    .about-area {
+        margin: 120px 0;
+    }
+    
+    .about-area .about-content {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        justify-content: space-evenly;
+        padding: 0px 100px 0;
+    }
+    
+    .about-area .about-content p {
+        color:var(--black);
+        line-height: 30px;
+    }
+    
+    .about-area .about-content strong {
+        line-height: 40px;
+    }
+    /* aurhtentic-it section end  */
+    
+    /* our-team section end  */
+    /* =========================== about css section end=========================== */
+    /* =========================== BLOOD css section start=========================== */
+    .blood-area{
+        margin-top: 100px;
+    }
+    .blood-area .blood-content {
+        color: var(--main-color);
+        padding: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        border: var(--black-6);
+        box-shadow: 0px 2px 7px 1px var(--black-6);
+        border-radius: 5px;
+        justify-content: center;
+        border: 2px solid transparent;
+        transition: all linear.2s;
+    }
+    .blood-area .blood-content:hover {
+        border: 2px solid var(--main-color);
+    }
+    .blood-area .blood-content .blood-icon i {
+        font-size:20px;
+        margin-right: 10px;
+    }
+    .blood-area .blood-content .blood h4 {
+      margin: 0;
+    }
+    /* =========================== BLOOD css section end=========================== */
+      /* =========================== contact-us css section end=========================== */
+    
+      .contact-us-area {
+        width: 100%;
+        background-image: url(../images/contact-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contact-us-area .contact-us-header {
+        padding: 120px;
+        text-align: center;
+    }
+    
+    .contact-us-area .contact-us-header p {
+        color: #000000;
+    }
+    .contact-area {
+        margin-top: 65px;
+        background-image: linear-gradient(140deg, #004872 0%, #291160cc 100%), url(../images/registration-form-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .shop-contact-area .shop-form {
+        justify-content: center;
+        margin: 80px 0;
+    }
+    
+    .shop-contact-area .shop-form .shop-form-box {
+        padding-top: 80px;
+    }
+    
+    .shop-contact-area .shop-form .shop-form-box input {
+        width: 100%;
+        outline: none;
+        padding: 15px;
+        margin: 10px;
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #33333349;
+        transition: all linear .2s;
+    }
+    
+    .shop-contact-area .shop-form .shop-form-box input::placeholder {
+        color: #333333ab;
+    }
+    
+    .shop-contact-area .shop-form .shop-form-box .btn {
+        color: #ffffff;
+        border-color: transparent;
+        border-radius: 13px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: #1b6197;
+        padding: 10px;
+        transition: all linear .2s;
+    }
+    
+    .shop-contact-area .shop-form .shop-form-box .btn:hover {
+        background-color: #004479;
+    }
+
+        /* form  section start  */
+    
+        .we-are-form-content {
+            padding: 40px 0px;
+        }
+        
+        .contact-area {
+            background-image: linear-gradient(140deg, #004872 0%, #291160cc 100%), url(../images/registration-form-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .registration-form-header h1 {
+            font-size: 50px;
+            color: #ffffff;
+            font-family: 'Share Tech', sans-serif;
+            margin: 0 20px;
+        }
+        
+        .input-box input {
+            color: var(--white);
+            width: 100%;
+            outline: none;
+            padding: 18px;
+            margin: 20px 10px;
+            background-color: transparent;
+            border: 0 solid #333;
+            border-bottom-width: 2px;
+            border-bottom-color: #ffffff;
+            transition: all linear .2s;
+        }
+        
+        .we-are-form-content .input-box input:hover {
+            background-color: transparent;
+        }
+        
+        .input-box textarea {
+            color: var(--bg-color);
+            width: 100%;
+            outline: none;
+            padding: 18px;
+            background-color: transparent;
+            border: 0 solid #333;
+            border-bottom-width: 2px;
+            transition: all linear .2s;
+            border-bottom-color: #ffffff;
+        }
+        
+        .we-are-form-content .input-box textarea:hover {
+            background-color: transparent;
+        }
+        
+        .registration-form-btn {
+            text-align: end;
+            padding: 5px 8px;
+        }
+        .contact-btn {
+            margin: 40px 0;
+        }
+        
+
+        /* form right content start */ 
+        
+        .we-are-form-content .form-location {
+            padding: 60px 10px;
+        }
+        
+        .we-are-form-content .content i {
+            padding: 0 20px;
+            font-size: 28px;
+            color: var(--main-color);
+        }
+        
+        .we-are-form-content .content span {
+            line-height: 50px;
+            font-size: 28px;
+            color: var(--white);
+            font-family: 'Share Tech', sans-serif;
+        }
+        
+        .we-are-form-content .content p {
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            padding-left: 65px;
+        }
+        /* form  section end */
+        /*MAP  */
+        .map-bg-area iframe {
+            width: 100%;
+        }
+    /* =========================== contact-us css section end=========================== */
+    /* =========================== donate css section start=========================== */
+  .donate-area .donate-wraper {
+        margin-top: 100px;
+    }
+    
+  .donate-area .donate-wraper .our-team-cards {
+        /* width: 230px; */
+        height: 100%;
+        /* margin-bottom: 40px; */
+        padding: 0;
+        position: relative;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.11);
+        /* background-color: #d8c6c6; */
+    }
+    
+  .donate-area .donate-wraper .our-team-cards .our-taem-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.11);
+    }
+    
+  .donate-area .donate-wraper .our-team-cards .our-team-content {
+        color: #000000a8;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+    
+  .donate-area .donate-wraper .our-team-cards .our-team-content h2 {
+    color: var(--main-color);
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 30px;
+        transition: all linear .2s;
+    }
+    
+  .donate-area .donate-wraper .our-team-cards .our-team-content h2:hover {
+        color: var(--main-color);
+    }
+    
+  .donate-area .donate-wraper .our-team-cards .our-team-content span {
+    display: block;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    /* =========================== donate css section end=========================== */
